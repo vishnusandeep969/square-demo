@@ -1,0 +1,27 @@
+<html>
+<body>
+<h2> Area Of A Square </h2>
+<p id="demo"></p>
+<button onclick="SquareArea()">area of Square!
+</button><br>
+<label>Length</label><input type="text" id="length" value=5><br>
+<label>Width</label><input type="text" id="width" value=5><br>
+<p id="SquareArea"></p>
+<script>
+
+function SquareArea()
+
+{
+var length= parseInt(document.getElementById("length").value);
+var width=parseInt(document.getElementById("width").value);
+
+var SquareArea=" area of a square is "+(length*width);
+var square = document.getElementById("SquareArea");
+square.innerHTML = SquareArea;
+
+}
+
+
+</script>
+</body>
+</html>

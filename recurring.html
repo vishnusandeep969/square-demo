@@ -1,0 +1,43 @@
+<html>
+<body>
+<h2 id="vishnu" ></h2>
+<p id="demo"></p>
+<button onclick="interestRate()">monthly interestRate!
+</button><br>
+<label>Rate</label><input type="text" id="rate" value=0.08><br>
+<label>Years</label><input type="text" id="noofyears" value=2><br>
+<label>Principle</label><input type="text" id="principle" value=2000><br>
+<p id="total"></p>
+<script>
+var h2=document.getElementById("vishnu");
+h2.innerHTML = "Hello World";
+
+function interestRate()
+{
+var rate= parseFloat(document.getElementById("rate").value);
+var years=parseInt(document.getElementById("noofyears").value);
+var princi=parseInt(document.getElementById("principle").value);
+var Total=" the total ineterest is "+(rate*years*princi);
+var interest = document.getElementById("total");
+interest.innerHTML = Total;
+
+  if (isNaN(n)) {document.getElementById("numb").
+innerHTML ="Please enter Numeric value";
+return false;
+alert("Please enter Numeric value")
+}
+ else
+ { document.getElementById("numb").
+innerHTML = "Numeric value is: " + n;
+return true;
+alert("Numeric value is: " + n)
+}
+}
+</script>
+</body>
+</html>
+
+
+
+
+
